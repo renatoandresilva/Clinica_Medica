@@ -1,0 +1,110 @@
+@import url('estilos-global.css');
+.links-bar {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin-top: 15px
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+ 
+  height: 100%;
+  width: max-content;
+}
+
+.links a {
+  color: #333;
+  font-size: 18px;
+  text-decoration-color: #00cad1;
+  text-decoration-thickness: 2px;
+  opacity: 1;
+  transition: .8s;
+}
+
+.links a:hover {
+  color: #0d6e71;
+  opacity: .8;
+}
+
+main {
+  text-align: center;
+}
+
+main h1 {
+  padding-block: 2.5rem
+}
+
+.secao-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;;
+
+  width: 100%;
+}
+
+.tabela-container {
+  display: flex;
+  height: 237.14px;
+}
+
+.tabela-img {
+  flex: 0 0 350px;
+}
+
+.especialista-img {
+  height: 100%;
+  width:100%;
+}
+
+.tabela-horarios {
+  flex: 1;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.tabela-horarios thead th{
+  padding: 15px 0px 15px 10px;
+  background-color: rgb(0, 229, 255); 
+}
+
+.tabela-horarios td:first-of-type {
+  padding-left: 10px;
+}
+
+tr:not(thead tr):nth-of-type(odd) {
+  background-color: #cdcdcd;
+}
+
+tr:not(thead tr):nth-of-type(even) {
+  background-color: #f1f1f1;
+}
+
+/* Adaptabilidade */
+@media (max-width: 768px) {
+  main {
+    padding-inline: 20px;
+  }
+  .tabela-container {
+    width: 100%;
+  }
+
+  .tabela-img {
+    display: none;
+  }    
+}
+
+@media (max-width: 426px) {
+  main {
+    padding-inline: 0px;
+  }
+  .links {
+    justify-content: center ;
+  }   
+}
